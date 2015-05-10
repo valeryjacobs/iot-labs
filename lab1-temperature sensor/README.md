@@ -2,21 +2,21 @@
 
 ## Lab 1 Environmental Sensor ##
 
-A Smart Home revolves around the idea that unattended sensors can report on ambient conditions in a home in the homeowners absence. A typical requirement for this is to measure the home environment and to react to this and work to alter the environment to the homeowners wishes. For instance, if the temperature drops below a threshold then a heating system may be activated.
+A Smart Home revolves around the idea that unattended sensors can report on ambient conditions in a home in the home owners absence. A typical requirement for this is to measure the home environment and to react to this and work to alter the environment to the home owners wishes. For instance, if the temperature drops below a threshold then a heating system may be activated.
 
 In order to implement this, it is possible to take consumer equipment and combine it in a good approximation of how commercial equipment may work. For instance, it is possible to use the **Arduino** consumer electronics boards and standardised components to measure temperature 
 
 ### Key Challenge 1 - Build a Sensor
 
-The first key challenge we face is to be able to interact and respond to our environment. Easily accessible and low cost consumer electronics can be built and programmed to provide insight into the ambient environment that surrounds us. Once we have the ability to detect temperature, we have reached our entry point to engaging with our environment and we can look to enrich, automate and improve our surroundings. 
+The first key challenge we face is to be able to interact with and respond to our environment. Easily accessible and low cost consumer electronics can be built and programmed to provide insight into the ambient environment that surrounds us. Once we have the ability to detect temperature, we have reached our entry point to engaging with our environment and we can look to enrich, automate and improve our surroundings. 
 
 ### Key Challenge 2 - Basic Scalable Ingestion 
 
 A successful device on consumer sale can be measured in the millions of shipped units. Each device is capable of "calling home", reporting their state to remote services, many times a second. Even with a relatively small number of distributed systems, it becomes a challenge to reliably receive and process the weight of messaging that Machine to Machine (M2M) communication makes possible.
 
-In order to solve this challenge, Cloud Platform members such as the Azure Event Hub can be used to offer message receipt and onward delivery.
+In order to solve this challenge, cloud platform features such as the Azure Event Hubs can be used to offer message ingestion and forwarding for further processing.
 
-Furthermore, simply receiving messages is insufficient to meet the challenges of at scale message processing. We instead need to be able to pass these messages onto a processing
+Furthermore, simply receiving messages is insufficient to meet the challenges of at scale message processing. We instead need to be able to pass these messages onto a processing unit that is capable of handling high velocity and potentially large data sets.
 
 In a basic form, we can use Azure Stream Analytics to provide on the fly aggregations and averages of data points flowing through the system.
 
